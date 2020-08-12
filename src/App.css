@@ -1,0 +1,10 @@
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+.status {
+  margin-bottom: 15px;
+}
+.display {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,7 @@
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  width: 30%;
+}
