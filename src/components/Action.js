@@ -1,5 +1,6 @@
 import React from "react";
 import "./Action.css";
+
 import rockButton from "../assets/r_button.png";
 import paperButton from "../assets/p_button.png";
 import scissorsButton from "../assets/s_button.png";
@@ -10,13 +11,20 @@ import pcrock from "../assets/pc_rock.png";
 import pcpaper from "../assets/pc_paper.png";
 import pcscissors from "../assets/pc_scissors.png";
 
+const MAX_TURN = 5;
+
 function Action({ setUser, setPC, setScore, setTieUser, setTiePc }) {
+  const [tieUserMedium, setTieUserMedium] = React.useState(0);
+  const [tiePcMedium, setTiePcMedium] = React.useState(0);
+  const [turnPlay, setturnPlay] = React.useState(0);
+
   function userChoose(choice) {
     let scores = "";
     let pcchoice;
     let scoreUser = choice;
     let tieTurnUser = 0;
     let tieTurnPc = 0;
+
     //người chọn//
     if (choice == "Rock") {
       choice = <img src={rock} />;
@@ -58,16 +66,29 @@ function Action({ setUser, setPC, setScore, setTieUser, setTiePc }) {
     }
 
     setScore(scores);
-    //Tỉ số
+    //Ti so
     if (scores == "Win") {
-      tieTurnUser = tieTurnUser + 1;
+      tieTurnUser = tieUserMedium + 1;
+      tieTurnPc = tiePcMedium;
     } else if (scores == "Lose") {
-      tieTurnPc = tieTurnPc + 1;
+      tieTurnPc = tiePcMedium + 1;
+      tieTurnUser = tieUserMedium;
+    } else if (scores == "Draw") {
+      tieTurnPc = tiePcMedium;
+      tieTurnUser = tieUserMedium;
     }
 
-    console.log(tieTurnUser, tieTurnPc);
+    //luot choi
+    if(turnPlay === MAX_TURN){
+      alert("bạn đã hết lượt chơi")
+    }
+    // console.log(tieTurnUser, tieTurnPc);
+    // console.log(tieUserMedium, tiePcMedium);
+    setTieUserMedium(tieTurnUser);
+    setTiePcMedium(tieTurnPc);
     setTieUser(tieTurnUser);
     setTiePc(tieTurnPc);
+    setturnPlay(turnPlay + 1);
   }
 
   return (

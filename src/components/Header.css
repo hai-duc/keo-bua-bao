@@ -1,3 +1,6 @@
 .Header, .tie {
   text-align: center;
 }
+.tie{
+  font-size: 30px;
+}
