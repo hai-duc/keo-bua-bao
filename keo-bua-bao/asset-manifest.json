@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hai-duc/keo-bua-bao/static/css/main.7716a263.chunk.css",
+    "main.js": "/hai-duc/keo-bua-bao/static/js/main.29cfacb7.chunk.js",
+    "main.js.map": "/hai-duc/keo-bua-bao/static/js/main.29cfacb7.chunk.js.map",
+    "runtime-main.js": "/hai-duc/keo-bua-bao/static/js/runtime-main.7aa4bf13.js",
+    "runtime-main.js.map": "/hai-duc/keo-bua-bao/static/js/runtime-main.7aa4bf13.js.map",
+    "static/js/2.5137490e.chunk.js": "/hai-duc/keo-bua-bao/static/js/2.5137490e.chunk.js",
+    "static/js/2.5137490e.chunk.js.map": "/hai-duc/keo-bua-bao/static/js/2.5137490e.chunk.js.map",
+    "index.html": "/hai-duc/keo-bua-bao/index.html",
+    "precache-manifest.55611c459f65a3a54f0fa0bb6816a4e9.js": "/hai-duc/keo-bua-bao/precache-manifest.55611c459f65a3a54f0fa0bb6816a4e9.js",
+    "service-worker.js": "/hai-duc/keo-bua-bao/service-worker.js",
+    "static/css/main.7716a263.chunk.css.map": "/hai-duc/keo-bua-bao/static/css/main.7716a263.chunk.css.map",
+    "static/js/2.5137490e.chunk.js.LICENSE.txt": "/hai-duc/keo-bua-bao/static/js/2.5137490e.chunk.js.LICENSE.txt",
+    "static/media/Display.css": "/hai-duc/keo-bua-bao/static/media/background.6df7cfde.jpg",
+    "static/media/p_button.png": "/hai-duc/keo-bua-bao/static/media/p_button.b91b400f.png",
+    "static/media/r_button.png": "/hai-duc/keo-bua-bao/static/media/r_button.5c54f18e.png",
+    "static/media/s_button.png": "/hai-duc/keo-bua-bao/static/media/s_button.3bf31555.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7aa4bf13.js",
+    "static/js/2.5137490e.chunk.js",
+    "static/css/main.7716a263.chunk.css",
+    "static/js/main.29cfacb7.chunk.js"
+  ]
+}
